@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Media Quries</title>
+    <link href="assests/css/normalize.css" rel="stylesheet">
+    <meta content="width=device-width initial-sacal=1" name="viewport">
+    <style>
+        body > section {
+            width: 1515px;
+            height: 4900px;
+        }
+
+        body > section > section {
+            width: 1064px;
+            height: 4900px;
+            background-color: #f6e1f6;
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body >  section > section > section {
+            position: absolute;
+        }
+
+        body >  section > section > section:nth-child(1) {
+            width: 1064px;
+            height: 330px;
+        }
+        body >  section > section > section:nth-child(2) {
+            width: 1064px;
+            height: 330px;
+            top: 390px;
+        }
+
+        body >  section > section > section:nth-child(3) {
+            width: 1064px;
+            height: 155px;
+            top: 722px;
+        }
+
+        body >  section > section > section:nth-child(4) {
+            width: 1064px;
+            height: 300px;
+            top: 880px;
+            border: 1px solid green;
+        }
+
+        body >  section > section > section:nth-child(5) {
+            width: 1064px;
+            height: 120px;
+            top: 1183px;
+        }
+
+        body >  section > section > section:nth-child(6) {
+            width: 1064px;
+            height: 310px;
+            top: 1305px;
+        }
+
+        body >  section > section > section:nth-child(7) {
+            width: 1064px;
+            height: 65px;
+            top: 1617px;
+        }
+
+        body >  section > section > section:nth-child(8) {
+            width: 1064px;
+            height: 175px;
+            top: 1685px;
+        }
+
+        body >  section > section > section:nth-child(9) {
+            width: 1064px;
+            height: 140px;
+            top: 1863px;
+        }
+
+        body >  section > section > section:nth-child(10) {
+            width: 1064px;
+            height: 320px;
+            position: absolute;
+            top: 2005px;
+        }
+
+        body >  section > section > section:nth-child(11) {
+            width: 1064px;
+            height: 150px;
+            position: absolute;
+            top: 2330px;
+        }
+
+        body >  section > section > section:nth-child(12) {
+            width: 1064px;
+            height: 340px;
+            position: absolute;
+            top: 2482px;
+        }
+
+        body >  section > section > section:nth-child(13) {
+            width: 1064px;
+            height: 60px;
+            position: absolute;
+            top: 2824px;
+        }
+
+        body >  section > section > section:nth-child(14) {
+            width: 1064px;
+            height: 175px;
+            position: absolute;
+            top: 2887px;
+        }
+
+        body >  section > section > section:nth-child(15) {
+            width: 1064px;
+            height: 140px;
+            position: absolute;
+            top: 3064px;
+        }
+
+        body >  section > section > section:nth-child(16) {
+            width: 1064px;
+            height: 340px;
+            position: absolute;
+            top: 3208px;
+        }
+
+        body >  section > section > section:nth-child(17) {
+            width: 1064px;
+            height: 140px;
+            position: absolute;
+            top: 3552px;
+        }
+
+        body >  section > section > section:nth-child(18) {
+            width: 1064px;
+            height: 400px;
+            position: absolute;
+            top: 3695px;
+        }
+
+        body >  section > section > section:nth-child(19) {
+            width: 1064px;
+            height: 120px;
+            position: absolute;
+            top: 4098px;
+        }
+
+        body >  section > section > section:nth-child(20) {
+            width: 1064px;
+            height: 675px;
+            position: absolute;
+            top: 4220px;
+        }
+
+        * {
+            font-family: 'Calibri', sans-serif;
+            color: white;
+        }
+
+        body > section > section > section:nth-child(1) {
+            background: url("assests/img/laptop_keys_gradient.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body >  section > section > section:nth-child(1) > div:nth-child(1) {
+            width: 60px;
+            height: 30px;
+            position: absolute;
+            top: 2%;
+            right: 34%;
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        body >  section > section > section:nth-child(1) > div:nth-child(2) {
+            width: 50px;
+            height: 30px;
+            position: absolute;
+            top: 2%;
+            right: 26%;
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        body >  section > section > section:nth-child(1) > div:nth-child(3) {
+            width: 80px;
+            height: 30px;
+            position: absolute;
+            top: 2%;
+            right: 16%;
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        body >  section > section > section:nth-child(1) > div:nth-child(4) {
+            width: 120px;
+            height: 30px;
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        body >  section > section > section:nth-child(1) > div:nth-child(5) {
+            width: 62px;
+            height: 5px;
+            position: absolute;
+            top: 13%;
+            right: 34%;
+            background-color: #80e0ff;
+        }
+
+        body >  section > section > section:nth-child(1) > div:nth-child(6) {
+            width: 53px;
+            height: 5px;
+            position: absolute;
+            top: 13%;
+            right: 26%;
+            background-color: #80e0ff;
+        }
+
+        body >  section > section > section:nth-child(1) > div:nth-child(7) {
+            width: 80px;
+            height: 5px;
+            position: absolute;
+            top: 13%;
+            right: 16%;
+            background-color: #80e0ff;
+        }
+
+        body >  section > section > section:nth-child(1) > div:nth-child(8) {
+            width: 120px;
+            height: 5px;
+            position: absolute;
+            top: 13%;
+            right: 2%;
+            background-color: #80e0ff;
+        }
+
+        body >  section > section > section:nth-child(1) > div:nth-child(9) {
+            width: 600px;
+            height: 100px;
+            position: absolute;
+            top: 35%;
+            left: 5%;
+        }
+
+        body >  section > section > section:nth-child(1) > div:nth-child(9) > p.first{
+            color: white;
+            font-size: 85px;
+            margin: 0;
+        }
+
+        body >  section > section > section:nth-child(1) > div:nth-child(9) > p.second{
+            color: white;
+            font-size: 15px;
+            margin: 0;
+        }
+
+        body > section > section > section:nth-child(2) > div:nth-child(1) {
+            width: 350px;
+            height: 330px;
+            position: absolute;
+            left: 0;
+        }
+
+        body > section > section > section:nth-child(2) > div:nth-child(2) {
+            width: 610px;
+            height: 330px;
+            position: absolute;
+            left: 40%;
+        }
+
+        body > section > section > section:nth-child(2) > div:nth-child(2) .selection2 {
+            margin: 10px 0px;
+            color: black;
+        }
+
+        body > section > section > section:nth-child(2) > div:nth-child(1) > article:nth-child(1) {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 20px;
+            bottom: 0;
+            background-color: #837c7c;
+        }
+
+        body > section > section > section:nth-child(2) > div:nth-child(1) > article:nth-child(2) {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: url("assests/img/profile.jpg");
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        body > section > section > section:nth-child(2) > div:nth-child(2) > article  {
+            width: 200px;
+            height: 40px;
+            position: absolute;
+            left: 20%;
+            bottom: 34%;
+        }
+
+        body > section > section > section:nth-child(2) > div:nth-child(2) > article > aside:nth-child(1) {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 4px;
+            left: 0;
+            background: url("assests/img/facebook.png");
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        body > section > section > section:nth-child(2) > div:nth-child(2) > article > aside:nth-child(2) {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            left: 40px;
+            background: url("assests/img/whatsapp.png");
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        body > section > section > section:nth-child(2) > div:nth-child(2) > article > aside:nth-child(3) {
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            top: 1px;
+            left: 85px;
+            background: url("assests/img/facebook-messenger.png");
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        body > section > section > section:nth-child(2) > div:nth-child(2) > article > aside:nth-child(4) {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 4px;
+            left: 132px;
+            background: url("assests/img/outgoing-call.png");
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        body >  section > section > section:nth-child(3) > p {
+            margin-top: 40px;
+            text-align: center;
+            color: black;
+        }
+
+        body >  section > section > section:nth-child(3) > h2 {
+            text-align: center;
+            color: black;
+        }
+
+        body > section > section > section:nth-child(2) > div:nth-child(2) > aside {
+            width: 600px;
+            height: 30px;
+            position: absolute;
+            left: 0%;
+            bottom: 10%;
+        }
+
+        body > section > section > section:nth-child(2) > div:nth-child(2) > aside > button {
+            border: none;
+            color: white;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .button1 {background-color: #4CAF50;}
+        .button2 {background-color: #008CBA;}
+
+        body > section > section > section:nth-child(4) > div {
+            width: calc(100% / 2);
+            height: 300px;
+            position: absolute;
+            border: 1px solid red;
+        }
+
+        body > section > section > section:nth-child(4) > div:nth-child(1) {
+            left: 0;
+        }
+
+        body > section > section > section:nth-child(4) > div:nth-child(2) {
+            left: calc((100% / 2) * 1);
+        }
+
+        body > section > section > section:nth-child(4) > div:nth-child(1) > aside {
+            width: 450px;
+            height: 300px;
+            left: 60px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            right: 310px;
+        }
+
+        body > section > section > section:nth-child(4) > div:nth-child(2) > aside {
+            width: 450px;
+            height: 300px;
+            left: 20px;
+            position: absolute;
+            border: 1px solid blue;
+        }
+
+        body > section > section > section:nth-child(4) > div:nth-child(1) > aside > div {
+            width: 400px;
+            height: 20px;
+            background-color: blue;
+            transition: all 2s;
+        }
+
+        body > section > section > section:nth-child(4) > div:nth-child(1) > aside > div:hover {
+            margin-left: 290px;
+            transition: all 2s;
+        }
+
+        body > section > section > section:nth-child(5) > h2 {
+            margin-top: 50px;
+            text-align: center;
+            color: black;
+        }
+
+        body > section > section > section:nth-child(6)  div{
+            width: calc(100% / 4);
+            height: 310px;
+            position: absolute;
+        }
+
+        body > section > section > section:nth-child(6) > div:nth-child(1) {
+            left: 0;
+        }
+
+        body > section > section > section:nth-child(6) > div:nth-child(2) {
+            left: calc((100% / 4) * 1);
+        }
+
+        body > section > section > section:nth-child(6) > div:nth-child(3) {
+            left: calc((100% / 4) * 2);
+        }
+
+        body > section > section > section:nth-child(6) > div:nth-child(4) {
+            left: calc((100% / 4) * 3);
+        }
+
+        body > section > section > section:nth-child(6) > div:nth-child(1) > aside {
+            width: 180px;
+            height: 248px;
+            position: absolute;
+            left: 25%;
+            background: url("assests/img/games-wallpaper.jpg");
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        body > section > section > section:nth-child(6) > div:nth-child(2) > aside {
+            width: 180px;
+            height: 260px;
+            position: absolute;
+            left: 20%;
+            background: url("assests/img/travel.jpg");
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        body > section > section > section:nth-child(6) > div:nth-child(3) > aside {
+            width: 180px;
+            height: 248px;
+            position: absolute;
+            left: 15%;
+            background: url("assests/img/miusic.jpg");
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        body > section > section > section:nth-child(6) > div:nth-child(4) > aside {
+            width: 180px;
+            height: 248px;
+            position: absolute;
+            left: 10%;
+            background: url("assests/img/stamp_collectors.jpg");
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        body > section > section > section:nth-child(6) > div:nth-child(1) >  article {
+            width: 180px;
+            height: 62px;
+            background-color: #4a4a4a;
+            position: absolute;
+            left: 25%;
+            bottom: 0;
+            text-align: center;
+        }
+
+        body > section > section > section:nth-child(6) > div:nth-child(2) >  article {
+            width: 180px;
+            height: 62px;
+            background-color: #4a4a4a;
+            position: absolute;
+            left: 20%;
+            bottom: 0;
+            text-align: center;
+        }
+        body > section > section > section:nth-child(6) > div:nth-child(3) >  article {
+            width: 180px;
+            height: 62px;
+            background-color: #4a4a4a;
+            position: absolute;
+            left: 15%;
+            bottom: 0;
+            text-align: center;
+        }
+        body > section > section > section:nth-child(6) > div:nth-child(4) >  article {
+            width: 180px;
+            height: 62px;
+            background-color: #4a4a4a;
+            position: absolute;
+            left: 10%;
+            bottom: 0;
+            text-align: center;
+        }
+
+        body >  section > section > section:nth-child(8) {
+            background: url("assests/img/road.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body >  section > section > section:nth-child(8) > div:nth-child(1) {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 10%;
+            left: 15%;
+            background: url("assests/img/java.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body >  section > section > section:nth-child(8) > div:nth-child(2) {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 10%;
+            left: 37%;
+            background: url("assests/fonts/css/mysql.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body >  section > section > section:nth-child(8) > div:nth-child(3) {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 10%;
+            left: 57%;
+            background: url("assests/fonts/css/intellij-idea.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body >  section > section > section:nth-child(8) > div:nth-child(4) {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 10%;
+            left: 79%;
+            background: url("assests/fonts/css/netbeans.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body >  section > section > section:nth-child(8) > div:nth-child(5) {
+            width: 150px;
+            height: 70px;
+            position: absolute;
+            bottom: 10%;
+            left: 11%;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        body >  section > section > section:nth-child(8) > div:nth-child(6) {
+            width: 150px;
+            height: 70px;
+            position: absolute;
+            bottom: 10%;
+            left: 33%;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        body >  section > section > section:nth-child(8) > div:nth-child(7) {
+            width: 150px;
+            height: 70px;
+            position: absolute;
+            bottom: 10%;
+            left: 53%;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        body >  section > section > section:nth-child(8) > div:nth-child(8) {
+            width: 150px;
+            height: 70px;
+            position: absolute;
+            bottom: 10%;
+            left: 75%;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        body >  section > section > section:nth-child(9) > h2{
+            text-align: center;
+            color: black;
+            margin-top: 50px;
+        }
+
+        body >  section > section > section:nth-child(10) > div{
+            width: calc(100% / 3);
+            height: 320px;
+            position: absolute;
+        }
+
+        body > section > section > section:nth-child(10) > div:nth-child(1) {
+            left: 0;
+        }
+
+        body > section > section > section:nth-child(10) > div:nth-child(2) {
+            left: calc((100% / 3) * 1);
+        }
+
+        body > section > section > section:nth-child(10) > div:nth-child(3) {
+            left: calc((100% / 3) * 2);
+        }
+
+        body > section > section > section:nth-child(10) > div:nth-child(1) > aside {
+            width: 265px;
+            height: 243px;
+            position: absolute;
+            left: 18%;
+            background: url("assests/img/primary-education.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body > section > section > section:nth-child(10) > div:nth-child(2) > aside {
+            width: 265px;
+            height: 243px;
+            position: absolute;
+            left: 14%;
+            background: url("assests/img/higher-education.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body > section > section > section:nth-child(10) > div:nth-child(3) > aside {
+            width: 265px;
+            height: 243px;
+            position: absolute;
+            left: 8%;
+            background: url("assests/img/diploma.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body > section > section > section:nth-child(10) > div:nth-child(1) >  article {
+            width: 265px;
+            height: 77px;
+            background-color: #4a4a4a;
+            position: absolute;
+            left: 18%;
+            bottom: 0;
+            text-align: center;
+
+        }
+
+        body > section > section > section:nth-child(10) > div:nth-child(2) >  article {
+            width: 265px;
+            height: 77px;
+            background-color: #4a4a4a;
+            position: absolute;
+            left: 14%;
+            bottom: 0;
+            text-align: center;
+
+        }
+
+        body > section > section > section:nth-child(10) > div:nth-child(3) >  article {
+            width: 265px;
+            height: 77px;
+            background-color: #4a4a4a;
+            position: absolute;
+            left: 8%;
+            bottom: 0;
+            text-align: center;
+
+        }
+
+        body > section > section > section:nth-child(10) > div:nth-child(1) >  article > h2,p{
+            margin: 0;
+        }
+
+        body > section > section > section:nth-child(10) > div:nth-child(2) >  article > h2,p{
+            margin: 0;
+        }
+
+        body > section > section > section:nth-child(10) > div:nth-child(3) >  article > h2,p{
+            margin: 0;
+        }
+
+        body >  section > section > section:nth-child(11) p {
+            margin-top: 40px;
+            text-align: center;
+            color: black;
+        }
+
+        body >  section > section > section:nth-child(11) h2 {
+            text-align: center;
+            color: black;
+        }
+
+        body >  section > section > section:nth-child(12) > div{
+            width: calc(100% / 3);
+            height: 340px;
+            position: absolute;
+        }
+
+        body > section > section > section:nth-child(12) > div:nth-child(1) {
+            left: 0;
+        }
+
+        body > section > section > section:nth-child(12) > div:nth-child(2) {
+            left: calc((100% / 3) * 1);
+        }
+
+        body > section > section > section:nth-child(12) > div:nth-child(3) {
+            left: calc((100% / 3) * 2);
+        }
+
+        body > section > section > section:nth-child(12) > div:nth-child(1) > aside {
+            width: 265px;
+            height: 248px;
+            position: absolute;
+            background-color: #59d45f;
+            left: 18%;
+        }
+
+        body > section > section > section:nth-child(12) > div:nth-child(2) > aside {
+            width: 265px;
+            height: 248px;
+            position: absolute;
+            background-color: #246c77;
+            left: 14%;
+        }
+
+        body > section > section > section:nth-child(12) > div:nth-child(3) > aside {
+            width: 265px;
+            height: 248px;
+            position: absolute;
+            background-color: #47a2b0;
+            left: 8%;
+        }
+
+        body > section > section > section:nth-child(12) > div:nth-child(1) >  article {
+            width: 265px;
+            height: 58px;
+            background-color: #4a4a4a;
+            position: absolute;
+            left: 18%;
+            bottom: 10%;
+            text-align: center;
+        }
+
+        body > section > section > section:nth-child(12) > div:nth-child(2) >  article {
+            width: 265px;
+            height: 58px;
+            background-color: #4a4a4a;
+            position: absolute;
+            left: 14%;
+            bottom: 10%;
+            text-align: center;
+        }
+
+        body > section > section > section:nth-child(12) > div:nth-child(3) >  article {
+            width: 265px;
+            height: 58px;
+            background-color: #4a4a4a;
+            position: absolute;
+            left: 8%;
+            bottom: 10%;
+            text-align: center;
+        }
+
+        body > section > section > section:nth-child(12) > div:nth-child(1) > div {
+            width: 130px;
+            height: 34px;
+            background-color: #32c198;
+            position: absolute;
+            right: 7.3%;
+            bottom: 0%;
+            text-align: center;
+        }
+
+        body > section > section > section:nth-child(12) > div:nth-child(2) > div {
+            width: 130px;
+            height: 34px;
+            background-color: #32c198;
+            position: absolute;
+            right: 11.2%;
+            bottom: 0%;
+            text-align: center;
+        }
+
+        body > section > section > section:nth-child(12) > div:nth-child(3) > div {
+            width: 130px;
+            height: 34px;
+            background-color: #32c198;
+            position: absolute;
+            right: 17.3%;
+            bottom: 0%;
+            text-align: center;
+        }
+
+        body > section > section > section:nth-child(12) > div:nth-child(1) > div > p {
+            margin-top: 8px;
+        }
+
+        body > section > section > section:nth-child(12) > div:nth-child(2) > div > p {
+            margin-top: 8px;
+        }
+
+        body > section > section > section:nth-child(12) > div:nth-child(3) > div > p {
+            margin-top: 8px;
+        }
+
+        body > section > section > section:nth-child(12) > div:nth-child(1) > aside > article {
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            left: 15%;
+            top: 10%;
+            background: url("assests/fonts/css/laptop-analytic-96.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body > section > section > section:nth-child(12) > div:nth-child(2) > aside > article {
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            left: 15%;
+            top: 15%;
+            background: url("assests/fonts/css/icons8-microsoft-project-500.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body > section > section > section:nth-child(12) > div:nth-child(3) > aside > article {
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            left: 15%;
+            top: 15%;
+            background: url("assests/fonts/css/tasks.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body >  section > section > section:nth-child(14) {
+            background: url("assests/img/train-track.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body >  section > section > section:nth-child(14) > div:nth-child(1) {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 10%;
+            left: 15%;
+            background: url("assests/fonts/css/task-completed.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body >  section > section > section:nth-child(14) > div:nth-child(2) {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 10%;
+            left: 37%;
+            background: url("assests/fonts/css/icons8-report-card-100.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body >  section > section > section:nth-child(14) > div:nth-child(3) {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 10%;
+            left: 57%;
+            background: url("assests/fonts/css/total-sales.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body >  section > section > section:nth-child(14) > div:nth-child(4) {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 10%;
+            left: 79%;
+            background: url("assests/fonts/css/medal-second-place.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body >  section > section > section:nth-child(14) > div:nth-child(5) {
+            width: 150px;
+            height: 70px;
+            position: absolute;
+            bottom: 10%;
+            left: 11%;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        body >  section > section > section:nth-child(14) > div:nth-child(6) {
+            width: 150px;
+            height: 70px;
+            position: absolute;
+            bottom: 10%;
+            left: 33%;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        body >  section > section > section:nth-child(14) > div:nth-child(7) {
+            width: 150px;
+            height: 70px;
+            position: absolute;
+            bottom: 10%;
+            left: 53%;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        body >  section > section > section:nth-child(14) > div:nth-child(8) {
+            width: 150px;
+            height: 70px;
+            position: absolute;
+            bottom: 10%;
+            left: 75%;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        body >  section > section > section:nth-child(15) > p {
+            text-align: center;
+            color: black;
+            margin-top: 40px;
+        }
+
+        body >  section > section > section:nth-child(15) > h2 {
+            text-align: center;
+            color: black;
+        }
+
+        body >  section > section > section:nth-child(16) > div{
+            width: calc(100% / 3);
+            height: 340px;
+            position: absolute;
+        }
+
+        body > section > section > section:nth-child(16) > div:nth-child(1) {
+            left: 0;
+        }
+
+        body > section > section > section:nth-child(16) > div:nth-child(2) {
+            left: calc((100% / 3) * 1);
+        }
+
+        body > section > section > section:nth-child(16) > div:nth-child(3) {
+            left: calc((100% / 3) * 2);
+        }
+
+        body > section > section > section:nth-child(16) > div:nth-child(1) > aside {
+            width: 265px;
+            height: 248px;
+            position: absolute;
+            background-color: #b54f27;
+            left: 18%;
+        }
+
+        body > section > section > section:nth-child(16) > div:nth-child(2) > aside {
+            width: 265px;
+            height: 248px;
+            position: absolute;
+            background-color: #cf20b2;
+            left: 14%;
+        }
+
+        body > section > section > section:nth-child(16) > div:nth-child(3) > aside {
+            width: 265px;
+            height: 248px;
+            position: absolute;
+            background-color: #9624b0;
+            left: 8%;
+        }
+
+        body > section > section > section:nth-child(16) > div:nth-child(1) >  article {
+            width: 265px;
+            height: 58px;
+            background-color: #4a4a4a;
+            position: absolute;
+            left: 18%;
+            bottom: 10%;
+            text-align: center;
+        }
+
+        body > section > section > section:nth-child(16) > div:nth-child(2) >  article {
+            width: 265px;
+            height: 58px;
+            background-color: #4a4a4a;
+            position: absolute;
+            left: 14%;
+            bottom: 10%;
+            text-align: center;
+        }
+
+        body > section > section > section:nth-child(16) > div:nth-child(3) >  article {
+            width: 265px;
+            height: 58px;
+            background-color: #4a4a4a;
+            position: absolute;
+            left: 8%;
+            bottom: 10%;
+            text-align: center;
+        }
+
+        body > section > section > section:nth-child(16) > div:nth-child(1) > div {
+            width: 130px;
+            height: 34px;
+            background-color: #32c198;
+            position: absolute;
+            right: 7.3%;
+            bottom: 0%;
+            text-align: center;
+        }
+
+        body > section > section > section:nth-child(16) > div:nth-child(2) > div {
+            width: 130px;
+            height: 34px;
+            background-color: #32c198;
+            position: absolute;
+            right: 11.2%;
+            bottom: 0%;
+            text-align: center;
+        }
+
+
+        body > section > section > section:nth-child(16) > div:nth-child(3) > div {
+            width: 130px;
+            height: 34px;
+            background-color: #32c198;
+            position: absolute;
+            right: 17.3%;
+            bottom: 0%;
+            text-align: center;
+        }
+
+        body > section > section > section:nth-child(16) > div:nth-child(1) > div > p {
+            margin-top: 8px;
+        }
+
+        body > section > section > section:nth-child(16) > div:nth-child(2) > div > p {
+            margin-top: 8px;
+        }
+
+        body > section > section > section:nth-child(16) > div:nth-child(3) > div > p {
+            margin-top: 8px;
+        }
+
+        body > section > section > section:nth-child(16) > div:nth-child(1) > aside > article {
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            left: 15%;
+            top: 15%;
+            background: url("assests/fonts/css/tasks.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body > section > section > section:nth-child(16) > div:nth-child(2) > aside > article {
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            left: 15%;
+            top: 10%;
+            background: url("assests/fonts/css/laptop-analytic-96.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body > section > section > section:nth-child(16) > div:nth-child(3) > aside > article {
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            left: 15%;
+            top: 15%;
+            background: url("assests/fonts/css/icons8-microsoft-project-500.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body >  section > section > section:nth-child(17) > p {
+            text-align: center;
+            margin-top: 40px;
+            color: black;
+        }
+
+        body >  section > section > section:nth-child(17) > h2 {
+            text-align: center;
+            color: black;
+        }
+
+        body >  section > section > section:nth-child(18) > div{
+            width: calc(100% / 2);
+            height: 400px;
+            position: absolute;
+        }
+
+        body > section > section > section:nth-child(18) > div:nth-child(1) {
+            left: 0;
+        }
+
+        body > section > section > section:nth-child(18) > div:nth-child(2) {
+            left: calc((100% / 2) * 1);
+        }
+
+        body > section > section > section:nth-child(18) > div:nth-child(1) > aside {
+            width: 430px;
+            height: 294px;
+            position: absolute;
+            left: 10%;
+            background: url("assests/img/hotel.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body > section > section > section:nth-child(18) > div:nth-child(2) > aside {
+            width: 430px;
+            height: 294px;
+            position: absolute;
+            left: 8%;
+            background: url("assests/img/data-entry-keyer.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body > section > section > section:nth-child(18) > div:nth-child(2) > aside > article {
+            width: 130px;
+            height: 120px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url("assests/img/iimi.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body > section > section > section:nth-child(18) > div:nth-child(1) >  article {
+            width: 430px;
+            height: 106px;
+            background-color: #4a4a4a;
+            position: absolute;
+            left: 10%;
+            bottom: 0;
+            text-align: center;
+            color: black;
+        }
+
+        body > section > section > section:nth-child(18) > div:nth-child(2) >  article {
+            width: 430px;
+            height: 106px;
+            background-color: #4a4a4a;
+            position: absolute;
+            left: 8%;
+            bottom: 0;
+            text-align: center;
+            color: black;
+        }
+
+        body > section > section > section:nth-child(18) > div:nth-child(1) >  article > p,h1 {
+            margin: 5px;
+        }
+
+        body > section > section > section:nth-child(18) > div:nth-child(2) >  article > p,h1 {
+            margin: 5px;
+        }
+
+        body > section > section > section:nth-child(20) {
+            background: url("assests/img/contact-background.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body > section > section > section:nth-child(20) > aside{
+            width: 470px;
+            height: 550px;
+            position: absolute;
+            left: 2%;
+            top: 12%;
+            background: url("assests/img/black_background.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body > section > section > section:nth-child(20) > article {
+            width: 100px;
+            height: 75px;
+            position: absolute;
+            left: 18%;
+            top: 6%;
+            background: url("assests/fonts/css/send-email.png");
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        body > section > section > section:nth-child(20) > article > form {
+            margin-top: 180px;
+            margin-left: -140%;
+            width: 400px;
+            height: 350px;
+        }
+
+        body > section > section > section:nth-child(20) > article > form > #name {
+            height: 25px !important;
+            width: 400px !important;
+            background-color: unset;
+            border: 2px solid white;
+        }
+
+        body > section > section > section:nth-child(20) > article > form > #email {
+            height: 25px !important;
+            width: 400px !important;
+            background-color: unset;
+            border: 2px solid white;
+        }
+
+        body > section > section > section:nth-child(20) > article > form > #comm {
+            height: 180px !important;
+            width: 400px !important;
+            background-color: unset;
+            border: 2px solid white;
+        }
+
+        body > section > section > section:nth-child(20) > article > form > #submit {
+            height: 50px !important;
+            width: 405px !important;
+            background-color: unset;
+            border: 2px solid white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        @media all and (max-width: 425px){
+            body > section {
+                width: 1015px;
+                height: 4900px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <section>
+        <section>
+            <div>
+                <p class="first1">About</p>
+            </div>
+            <div>
+                <p class="first1">Skills</p>
+            </div>
+            <div>
+                <p class="first1">Projects</p>
+            </div>
+            <div>
+                <p class="first1">Edeucations</p>
+            </div>
+
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            <div>
+                <p class="first">Hi! I'm Sandaru</p>
+                <p class="second">UI Designer</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <article>
+                    <aside></aside>
+                </article>
+                <article></article>
+            </div>
+            <div>
+                <h3 class="selection2">About Me</h3>
+                <p class="selection2">Name : U.K.Sandaru Kithshan</p>
+                <p class="selection2">Batch : GDSE 55</p>
+                <p class="selection2">Branch : Panadura</p>
+                <p class="selection2">Age : 23</p><br>
+                <h3 class="selection2">Verifications</h3>
+                <article>
+                    <aside></aside>
+                    <aside></aside>
+                    <aside></aside>
+                    <aside></aside>
+                </article>
+                <aside>
+                    <button class="button button1">EDIT PROFILE</button>
+                    <button class="button button2">DOWNLOAD CV</button>
+                </aside>
+            </div>
+        </section>
+        <section>
+            <p class="selection2">SKILLS</p>
+            <h2 class="selection2">My Skill PROGRESS</h2>
+        </section>
+        <section>
+            <div>
+                <aside>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </aside>
+            </div>
+            <div>
+                <aside></aside>
+            </div>
+        </section>
+        <section>
+            <h2>Interests</h2>
+        </section>
+
+        <section>
+            <div>
+                <aside></aside>
+                <article>
+                    <h3>Gaming</h3>
+                </article>
+            </div>
+            <div>
+                <aside></aside>
+                <article>
+                    <h3>Traverling</h3>
+                </article>
+            </div>
+            <div>
+                <aside></aside>
+                <article>
+                    <h3>Music</h3>
+                </article>
+            </div>
+            <div>
+                <aside></aside>
+                <article>
+                    <h3>Hobby</h3>
+                </article>
+            </div>
+        </section>
+        <section></section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            <div>
+                <p>65<br>COMPLETED</p>
+            </div>
+            <div>
+                <p>65<br>COMPLETED</p>
+            </div>
+            <div>
+                <p>65<br>COMPLETED</p>
+            </div>
+            <div>
+                <p>65<br>COMPLETED</p>
+            </div>
+        </section>
+        <section>
+            <h2>Edeucation</h2>
+        </section>
+        <section>
+            <div>
+                <aside></aside>
+                <article>
+                    <h2>Primary Education</h2>
+                    <p>2003 - 2010 <br>Aluthgama Primary School</p>
+                </article>
+            </div>
+            <div>
+                <aside></aside>
+                <article>
+                    <h2>Higher Education</h2>
+                    <p>2011 - 2017 <br>St. John’s College</p>
+                </article>
+            </div>
+            <div>
+                <aside></aside>
+                <article>
+                    <h2> Diploma</h2>
+                    <p>2020 - 2021 <br>Institute Of Software Engineering</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <p class="selection2">RESULTS</p>
+            <h2 class="selection2">Project</h2>
+        </section>
+        <section>
+            <div>
+                <aside>
+                    <article></article>
+                </aside>
+                <article>
+                    <h3>Project 01</h3>
+                </article>
+                <div>
+                    <p>View</p>
+                </div>
+            </div>
+            <div>
+                <aside>
+                    <article></article>
+                </aside>
+                <article>
+                    <h3>Project 02</h3>
+                </article>
+                <div>
+                    <p>View</p>
+                </div>
+            </div>
+            <div>
+                <aside>
+                    <article></article>
+                </aside>
+                <article>
+                    <h3>Project 03</h3>
+                </article>
+                <div>
+                    <p>View</p>
+                </div>
+            </div>
+        </section>
+        <section></section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            <div>
+                <p>65<br>COMPLETED</p>
+            </div>
+            <div>
+                <p>65<br>Assigment</p>
+            </div>
+            <div>
+                <p>65<br>TOTAL</p>
+            </div>
+            <div>
+                <p>65<br>WON</p>
+            </div>
+        </section>
+        <section>
+            <p>RESULTS</p>
+            <h2>Assigment</h2>
+        </section>
+
+        <section>
+            <div>
+                <aside>
+                    <article></article>
+                </aside>
+                <article>
+                    <h3>Assignment 01</h3>
+                </article>
+                <div>
+                    <p>View</p>
+                </div>
+            </div>
+            <div>
+                <aside>
+                    <article></article>
+                </aside>
+                <article>
+                    <h3>Assignment 02</h3>
+                </article>
+                <div>
+                    <p>View</p>
+                </div>
+            </div>
+            <div>
+                <aside>
+                    <article></article>
+                </aside>
+                <article>
+                    <h3>Assignment 03</h3>
+                </article>
+                <div>
+                    <p>View</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <p>OTHER</p>
+            <h2>Working Experience</h2>
+        </section>
+        <section>
+            <div>
+                <aside></aside>
+                <article>
+                    <h1>Primary Education</h1>
+                    <p>2003 - 2010 <br>Aluthgama Primary School</p>
+                </article>
+            </div>
+            <div>
+                <aside>
+                    <article></article>
+                </aside>
+                <article>
+                    <h1>Primary Education</h1>
+                    <p>2003 - 2010 <br>Aluthgama Primary School</p>
+                </article>
+            </div>
+        </section>
+        <section></section>
+        <section>
+            <aside></aside>
+            <article>
+                <form action="assests/img/black_background.jpg">
+                    <input type="text" id="name" name="name" value="name"> <br><br>
+                    <input type="email" id="email" name="email" value="email"> <br><br>
+                    <input type="text" id="comm" name="comm" value="comment"> <br><br>
+                    <input type="submit" id="submit" value="Submit">
+                </form>
+            </article>
+        </section>
+    </section>
+</section>
+</body>
+</html>
