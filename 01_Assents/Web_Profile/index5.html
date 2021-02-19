@@ -2,83 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Circle Transition</title>
+    <title>CSS Media Quries</title>
     <link href="assests/css/normalize.css" rel="stylesheet">
+    <meta content="width=device-width initial-sacal=1" name="viewport">
     <style>
+        body > section {
+            width: 1532px;
+            height: 720px;
+            background-color: #eaeaea;
+        }
 
-        section {
-            width: 300px;
-            height: 300px;
+        body > section > div:nth-child(1){
+            width: 200px;
+            height: 200px;
+            left: 15%;
+            top: 0;
+            background-color: #59b7e7;
             position: absolute;
+        }
+
+        body > section > div:nth-child(2){
+            width: 200px;
+            height: 200px;
             left: 0;
             right: 0;
             margin: auto;
             top: 0;
-            bottom: 0;
+            background-color: #b85bea;
+            position: absolute;
         }
 
-        section::before{
-            content: " ";
+        body > section > div:nth-child(3){
+            width: 200px;
+            height: 200px;
+            right: 15%;
+            top: 0;
+            background-color: #e759c8;
             position: absolute;
+        }
+
+        body > section > div:nth-child(4){
+            width: 200px;
+            height: 200px;
+            left: 15%;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: #d46161;
+            position: absolute;
+        }
+
+        body > section > div:nth-child(5){
+            width: 200px;
+            height: 200px;
             left: 0;
             right: 0;
             top: 0;
             bottom: 0;
-            border-radius: 100%;
-            border: 16px solid gray;
-            border-top: 16px solid crimson;
-            animation: rotateC 2s infinite;
-            transform: rotate(43deg);
+            margin: auto;
+            background-color: #79d452;
+            position: absolute;
         }
 
-        section > div {
-            width: 50%;
-            height: 16px;
-            background: crimson;
-            position: absolute;
-            right: 0;
-            margin: auto;
-            bottom: 0;
-            top: 0;
-            transform-origin: left;
-            animation: rotateCHand 2s infinite;
-        }
-
-        section > div::before {
-            content: " ";
-            position: absolute;
-            width: 25px;
-            height: 25px;
-            border-radius: 100%;
-            background: crimson;
-            right: 0;
-            margin: auto;
+        body > section > div:nth-child(6){
+            width: 200px;
+            height: 200px;
+            right: 15%;
             top: 0;
             bottom: 0;
+            margin: auto;
+            background-color: #cab54d;
+            position: absolute;
         }
 
-        @keyframes rotateC {
-            from{
-                transform: rotate(43deg);
-            }
-            to{
-                transform: rotate(403deg);
-            }
+        body > section > div:nth-child(7){
+            width: 200px;
+            height: 200px;
+            left: 15%;
+            bottom: 0;
+            background-color: #e7c459;
+            position: absolute;
         }
 
-        @keyframes rotateCHand {
-            from{
-                transform: rotate(0deg);
-            }
-            to{
-                transform: rotate(360deg);
-            }
+        body > section > div:nth-child(8){
+            width: 200px;
+            height: 200px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: #5759e3;
+            position: absolute;
+        }
+
+        body > section > div:nth-child(9){
+            width: 200px;
+            height: 200px;
+            right: 15%;
+            bottom: 0;
+            background-color: #52e282;;
+            position: absolute;
+        }
+
+        body > section > div > h1{
+            text-align: center;
+            margin-top: 65px;
+
         }
     </style>
 </head>
 <body>
-<section>
-    <div></div>
-</section>
+    <section>
+        <div><h1><a href="index2.html" >Assignment 01</a></h1></div>
+        <div><h1><a href="index3.html" >Assignment 02</a></h1></div>
+        <div><h1><a href="index6.html" >Assignment 03</a></h1></div>
+
+        <div><h1><a href="index7.html" >Assignment 04</a></h1></div>
+        <div><h1><a href="index13.html" >Assignment 05</a></h1></div>
+        <div><h1><a href="index11.html" >Assignment 06</a></h1></div>
+
+        <div><h1><a href="index9.html" >Assignment 07</a></h1></div>
+        <div><h1><a href="index10.html" >Assignment 08</a></h1></div>
+        <div><h1><a href="index.html" >Assignment 09</a></h1></div>
+    </section>
 </body>
 </html>
