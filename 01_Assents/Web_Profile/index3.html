@@ -5,166 +5,132 @@
     <title>Positions</title>
     <link href="assests/css/normalize.css" rel="stylesheet">
     <style>
-        body > section {
-            width: 50vw;
-            height: 50vh;
-            position: absolute;
-        }
-
         body > section:nth-child(1) {
-            background: red;
-            left: 0;
-            top: 0;
+            height: 100vh;
         }
 
         body > section:nth-child(2) {
-            background: green;
-            right: 0;
-            top: 0;
+            height: 100vh;
+            background-color: lightblue;
         }
 
         body > section:nth-child(3) {
-            background: orange;
-            left: 0;
-            bottom: 0;
+            height: 100vh;
+            background-color: lightgray;
         }
 
         body > section:nth-child(4) {
-            background: deeppink;
-            right: 0;
-            bottom: 0;
+            height: 100vh;
+            background-color: #ec3b3b;
         }
 
-        body > aside {
-            width: 140px;
-            height: 140px;
-            background: white;
-            position: absolute;
-        }
-
-        body > aside:nth-child(5) {
-            left: 0;
+        body > section:nth-child(1) > div {
+            height: 50px;
+            width: 1519px;
+            background-color: red;
+            position: sticky;
             top: 0;
-            border-bottom-right-radius: 100%;
         }
 
-        body > aside:nth-child(6) {
-            right: 0;
+        body > section:nth-child(2) > div {
+            height: 50px;
+            width: 1519px;
+            background-color: darkblue;
+            position: sticky;
             top: 0;
-            border-bottom-left-radius: 100%;
         }
 
-        body > aside:nth-child(7) {
-            left: 0;
-            bottom: 0;
-            border-top-right-radius: 100%;
-        }
-
-        body > aside:nth-child(8) {
-            right: 0;
-            bottom: 0;
-            border-top-left-radius: 100%;
-        }
-
-        body > article {
-            width: 200px;
-            height: 200px;
-            background: white;
-            position: absolute;
-            left: 0;
+        body > section:nth-child(3) > div {
+            height: 50px;
+            width: 1519px;
+            background-color: darkgray;
+            position: sticky;
             top: 0;
+        }
+
+        body > section:nth-child(4) > div {
+            height: 50px;
+            width: 1519px;
+            background-color: darkred;
+            position: sticky;
             bottom: 0;
-            right: 0;
-            margin: auto;
         }
 
-        body > div {
-            width: 193px;
-            height: 95px;
-            background: white;
-            position: absolute;
+        body > section:nth-child(1) > div > h{
+            padding: 10px;
+            font-size: 40px;
+            color: white;
+            font-family: "Calibri";
+
         }
 
-        body > div:nth-child(10) {
-            left: 0;
-            right: 0;
-            margin: auto;
-            border-bottom-right-radius: 120px;
-            border-bottom-left-radius: 120px;
+        body > section:nth-child(2) > div > h{
+            padding: 10px;
+            font-size: 40px;
+            color: white;
+
         }
 
-        body > div:nth-child(11) {
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            border-top-right-radius: 120px;
-            border-top-left-radius: 120px;
+        body > section:nth-child(3) > div > h{
+            padding: 10px;
+            font-size: 40px;
+            color: white;
+
         }
 
-        section > div {
-            width: 175px;
-            height: 175px;
-            background: white;
-            border-radius: 100%;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
+        body > section:nth-child(4) > div > h{
+            padding: 10px;
+            font-size: 40px;
+            color: white;
+
         }
 
-        section > div > div {
-            width: 75px;
-            height: 75px;
-            background: red;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
+        body > section:nth-child(1) > h1{
+            text-align: center;
+            padding: 50px;
+            font-size: 200px;
+            font-family: "Calibri";
         }
 
-        article > div {
-            width: 125px;
-            height: 125px;
-            background: red;
-            position: absolute;
-            border-radius: 100%;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
+        body > section:nth-child(2) > h1{
+            text-align: center;
+            padding: 50px;
+            font-size: 200px;
+            font-family: "Calibri";
+        }
+
+        body > section:nth-child(3) > h1{
+            text-align: center;
+            padding: 50px;
+            font-size: 200px;
+            font-family: "Calibri";
+        }
+
+        body > section:nth-child(4) > h1{
+            text-align: center;
+            padding: 50px;
+            font-size: 200px;
+            font-family: "Calibri";
         }
 
     </style>
 </head>
 <body>
 <section>
-    <div>
-        <div></div>
-    </div>
+    <div><h>Card 1</h></div>
+    <h1>Hello</h1>
 </section>
 <section>
-    <div>
-        <div></div>
-    </div>
+    <div><h>Card 2</h></div>
+    <h1>How</h1>
 </section>
 <section>
-    <div>
-        <div></div>
-    </div>
+    <div><h>Card 3</h></div>
+    <h1>Are</h1>
 </section>
 <section>
-    <div>
-        <div></div>
-    </div>
+    <div><h>Card 4</h></div>
+    <h1>You..?</h1>
 </section>
-<aside></aside>
-<aside></aside>
-<aside></aside>
-<aside></aside>
-<article>
-    <div></div>
-</article>
-<div></div>
-<div></div>
 </body>
 </html>
