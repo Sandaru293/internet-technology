@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Positions</title>
+    <link href="assests/css/normalize.css" rel="stylesheet">
+    <style>
+        body > section:nth-child(1) {
+            height: 100vh;
+        }
+
+        body > section:nth-child(2) {
+            height: 100vh;
+        }
+
+        body > section:nth-child(3) {
+            height: 100vh;
+        }
+
+        article > div:nth-child(1) {
+            width: 390px;
+            height: 390px;
+            position: fixed;
+            border-radius: 50%;
+            border: 20px solid gray;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        article > div:nth-child(2) {
+            width: 350px;
+            height: 350px;
+            position: fixed;
+            border-radius: 50%;
+            border: 20px solid red;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        body > section:nth-child(1) > div {
+            width: 350px;
+            height: 350px;
+            background: purple;
+            position: relative;
+            border-radius: 100%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        body > section:nth-child(2) > div {
+            width: 350px;
+            height: 350px;
+            background: blue;
+            position: relative;
+            border-radius: 100%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        body > section:nth-child(3) > div {
+            width: 350px;
+            height: 350px;
+            background: #ff9a9a;
+            position: relative;
+            border-radius: 100%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        body > section:nth-child(1) > div > p{
+            font-family: "Calibri";
+            color: white;
+            text-align: center;
+            padding: 120px;
+            font-size: 50px;
+        }
+
+        body > section:nth-child(2) > div > p{
+            font-family: "Calibri";
+            color: white;
+            text-align: center;
+            padding: 120px;
+            font-size: 40px;
+
+        }
+
+        body > section:nth-child(3) > div > p{
+            font-family: "Calibri";
+            color: white;
+            text-align: -webkit-center;
+            padding: 50px;
+            font-size: 40px;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+
+    <div>
+        <p>Hello</p>
+    </div>
+</section>
+<section>
+    <div>
+        <p>Welcome To</p>
+    </div>
+</section>
+<section>
+    <div>
+        <p>Institute<br>of<br> Software<br> Engineering</p>
+    </div>
+</section>
+<article>
+    <div></div>
+    <div></div>
+    <div></div>
+</article>
+</body>
+</html>
