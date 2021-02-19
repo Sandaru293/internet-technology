@@ -2,135 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Positions</title>
+    <title>Circle Transition</title>
     <link href="assests/css/normalize.css" rel="stylesheet">
     <style>
-        body > section:nth-child(1) {
-            height: 100vh;
-        }
 
-        body > section:nth-child(2) {
-            height: 100vh;
-            background-color: lightblue;
-        }
-
-        body > section:nth-child(3) {
-            height: 100vh;
-            background-color: lightgray;
-        }
-
-        body > section:nth-child(4) {
-            height: 100vh;
-            background-color: #ec3b3b;
-        }
-
-        body > section:nth-child(1) > div {
-            height: 50px;
-            width: 1519px;
-            background-color: red;
-            position: sticky;
+        section {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
             top: 0;
-        }
-
-        body > section:nth-child(2) > div {
-            height: 50px;
-            width: 1519px;
-            background-color: darkblue;
-            position: sticky;
-            top: 0;
-        }
-
-        body > section:nth-child(3) > div {
-            height: 50px;
-            width: 1519px;
-            background-color: darkgray;
-            position: sticky;
-            top: 0;
-        }
-
-        body > section:nth-child(4) > div {
-            height: 50px;
-            width: 1519px;
-            background-color: darkred;
-            position: sticky;
             bottom: 0;
         }
 
-        body > section:nth-child(1) > div > h{
-            padding: 10px;
-            font-size: 40px;
-            color: white;
-            font-family: "Calibri";
-
+        section::before{
+            content: " ";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border-radius: 100%;
+            border: 16px solid gray;
+            border-top: 16px solid crimson;
+            animation: rotateC 2s infinite;
+            transform: rotate(43deg);
         }
 
-        body > section:nth-child(2) > div > h{
-            padding: 10px;
-            font-size: 40px;
-            color: white;
-
+        section > div {
+            width: 50%;
+            height: 16px;
+            background: crimson;
+            position: absolute;
+            right: 0;
+            margin: auto;
+            bottom: 0;
+            top: 0;
+            transform-origin: left;
+            animation: rotateCHand 2s infinite;
         }
 
-        body > section:nth-child(3) > div > h{
-            padding: 10px;
-            font-size: 40px;
-            color: white;
-
+        section > div::before {
+            content: " ";
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            border-radius: 100%;
+            background: crimson;
+            right: 0;
+            margin: auto;
+            top: 0;
+            bottom: 0;
         }
 
-        body > section:nth-child(4) > div > h{
-            padding: 10px;
-            font-size: 40px;
-            color: white;
-
+        @keyframes rotateC {
+            from{
+                transform: rotate(43deg);
+            }
+            to{
+                transform: rotate(403deg);
+            }
         }
 
-        body > section:nth-child(1) > h1{
-            text-align: center;
-            padding: 50px;
-            font-size: 200px;
-            font-family: "Calibri";
+        @keyframes rotateCHand {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
         }
-
-        body > section:nth-child(2) > h1{
-            text-align: center;
-            padding: 50px;
-            font-size: 200px;
-            font-family: "Calibri";
-        }
-
-        body > section:nth-child(3) > h1{
-            text-align: center;
-            padding: 50px;
-            font-size: 200px;
-            font-family: "Calibri";
-        }
-
-        body > section:nth-child(4) > h1{
-            text-align: center;
-            padding: 50px;
-            font-size: 200px;
-            font-family: "Calibri";
-        }
-
     </style>
 </head>
 <body>
 <section>
-    <div><h>Card 1</h></div>
-    <h1>Hello</h1>
-</section>
-<section>
-    <div><h>Card 2</h></div>
-    <h1>How</h1>
-</section>
-<section>
-    <div><h>Card 3</h></div>
-    <h1>Are</h1>
-</section>
-<section>
-    <div><h>Card 4</h></div>
-    <h1>You..?</h1>
+    <div></div>
 </section>
 </body>
 </html>
