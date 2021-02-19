@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider Animation</title>
+    <link href="assests/CSS/normalize.css" rel="stylesheet">
+    <style>
+        body > main {
+            width: 1536px;
+            height: 720px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow-x: hidden;
+        }
+
+        main > section:nth-child(1) {
+            width: 400%;
+            height: 65%;
+            display: flex;
+        }
+
+        section:nth-child(1) > div {
+            height: 100%;
+            width: 65%;
+        }
+
+        Main > section:nth-child(1) > section {
+            width: 400%;
+            height: 35%;
+            display: flex;
+            position: absolute;
+            top: 30%;
+            animation: slider 10s infinite;
+        }
+
+        section:nth-child(1) > section > div {
+            height: 100%;
+            width: 35%;
+        }
+
+        main > section:nth-child(2) {
+            width: 400%;
+            height: 35%;
+            display: flex;
+            animation: slider 10s infinite;
+        }
+
+        section:nth-child(2) > div {
+            height: 100%;
+            width: 35%;
+        }
+
+        main > section:nth-child(3) {
+            width: 340px;
+            height: 120px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: 170px;
+        }
+
+        main > section:nth-child(4) {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            left: 629px;
+            margin: auto;
+            bottom: 23%;
+            animation: rotateC 2s infinite;
+        }
+
+        main > section:nth-child(5) {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            right: 639px;
+            margin: auto;
+            bottom: 23%;
+            animation: rotateC 2s infinite;
+        }
+
+        section:nth-child(1) > div{
+            background: url("assests/img/sky.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section:nth-child(1) > section > div{
+            background: url("assests/img/city.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section:nth-child(2) > div{
+            background: url("assests/img/road.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section:nth-child(3) {
+            background: url("assests/img/car.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section:nth-child(4) {
+            background: url("assests/img/wheel.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section:nth-child(5) {
+            background: url("assests/img/wheel.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes slider {
+            0%{
+                transform: translateX(-0%);
+            }
+            25%{
+                transform: translateX(-25%);
+            }
+            50%{
+                transform: translateX(-50%);
+            }
+            75%{
+                transform: translateX(-75%);
+            }
+        }
+
+        @keyframes rotateC {
+            0%{
+                transform: rotate(0deg);
+            }
+            10%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(180deg);
+            }
+            50%{
+                transform: rotate(360deg);
+            }
+            75% {
+                transform: rotate(-180deg);
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </section>
+
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <section></section>
+    <section></section>
+    <section></section>
+</main>
+</body>
+</html>
