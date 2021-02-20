@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Bootstrap</title>
+    <link href="assests/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        main {
+            width: 800px;
+            background-color: #eeeeee;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid ">
+        <a class="navbar-brand text-black-50 fw-bolder" href="#">POS System</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active text-white" href="index15.html">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active text-white" href="index16.html">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active text-white" href="index17.html">Order</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active text-white" href="index14.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main>
+    <section class="container">
+        <section class="row border">
+            <div class="row form-floating mb-3 mt-3">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Item Code">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Description">
+                </div>
+            </div>
+            <div class="row form-floating mb-3 mt-3">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Unit Price">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Qty On Hand">
+                </div>
+            </div>
+            <div class="row form-floating mb-3 mt-3">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Order QTY">
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+
+            <div class="div-inline mb-3 mt-3">
+
+                <button type="button" class="btn btn-outline-primary">Add</button>
+                <button type="button" class="btn btn-outline-secondary">Search</button>
+                <button type="button" class="btn btn-outline-success">Update</button>
+                <button type="button" class="btn btn-outline-danger">Delete</button>
+                <button type="button" class="btn btn-outline-warning">View All</button>
+            </div>
+
+            <table class="table">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Unit Price</th>
+                    <th scope="col">Qty On Hand</th>
+                    <th scope="col">Order QTY</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+
+
+</main>
+
+<script src="assests/js/bootstrap.js"></script>
+</body>
+</html>
